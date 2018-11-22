@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToggleComponent } from './toggle/toggle.component';
-import { MatSlideToggleModule, MatSliderModule, MatSelectModule } from '@angular/material';
+import { MatSlideToggleModule, MatSliderModule, MatSelectModule, MatFormFieldModule } from '@angular/material';
 
 import { SelectComponent } from './select/select.component';
 
@@ -24,6 +24,7 @@ const routes: Routes = [
   ],
   imports: [
     MatSelectModule,
+    MatFormFieldModule,
     MatSlideToggleModule,
     MatSliderModule,
     BrowserModule,
