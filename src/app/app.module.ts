@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SliderComponent } from './slider/slider.component';
+import {MatSliderModule} from '@angular/material/slider';
 
 import { ToggleComponent } from './toggle/toggle.component';
 import { MatSlideToggleModule, MatSliderModule, MatSelectModule, MatFormFieldModule } from '@angular/material';
@@ -19,6 +21,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    SliderComponent
+    AppComponent,
     ToggleComponent,
     SelectComponent
   ],
@@ -28,6 +32,8 @@ const routes: Routes = [
     MatSlideToggleModule,
     MatSliderModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    MatSliderModule
     BrowserAnimationsModule,
     RouterModule.forRoot(routes)
   ],
